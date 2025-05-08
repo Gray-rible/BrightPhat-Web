@@ -1,0 +1,316 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+main{
+    margin-left: 310px;
+  
+}
+.container {
+    max-width: 1200px;
+    margin-top: 10px ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.imageco {
+width: 100%;
+max-height: 450px; /* Adjust height */
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden; /* Hides overflowing content */
+background-color: rgba(199, 199, 199, 0.66);
+}
+
+.imageco img {
+width: 100%; /* Ensures the image fills the container */
+max-width: 1000px; /* Limits maximum width */
+height: auto; /* Keeps aspect ratio */
+object-fit: cover; /* Fills space while trimming overflow */
+border-radius: 10px; /* Soft rounded edges */
+}
+.scholarship-header {
+display: flex;
+align-items: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.scholarship-header img {
+width: 100px;
+height: 100px;
+border-radius: 50%; /* Makes the image circular */
+object-fit: cover; /* Ensures the image fits within the circle */
+border: 2px solid #ccc; /* Optional border */
+}
+
+.scholarship-header h1 {
+margin: 0;
+font-size: 24px;
+color: #333;
+}
+.scholarship-header img {
+width: 120px; /* Fixed width */
+height: 120px; /* Fixed height */
+border-radius: 50%; /* Makes the image circular */
+object-fit: cover; /* Ensures the image fits within the circle */
+border: 2px solid #ccc; /* Optional border */
+background-color: #f0f0f0;
+margin-left: 30px; /* Light gray background for empty images */
+}
+.scholarship-details {
+display: flex;
+align-items: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.scholarship-details div {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.scholarship-details i {
+font-size: 16px;
+}
+.nav-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.nav-button {
+padding: 12px 20px;
+border: none;
+border-radius: 10px;
+background-color: #ffe3d3;
+color: 
+#f2a34d;
+cursor: pointer;
+font-size: 16px;
+display: flex;
+align-items: center;
+gap: 8px;
+transition: background 0.3s ease;
+text-decoration: none;
+}
+.nav-button i{
+color: 
+#f2a34d;
+}
+.nav-button i {
+font-size: 18px;
+}
+
+.nav-button:hover {
+color: white;           
+background: linear-gradient(135deg, rgb(46, 42, 77), rgb(23, 23, 31));
+
+}
+.nav-button i:hover {
+/* Change to a darker shade on hover */
+color: white; /* Change text color to white on hover */
+}
+.section {
+display: none;
+padding: 20px;
+background: #e7e7e7;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+margin-top: 20px;
+}
+
+.active {
+display: block; /* Only show the selected section */
+}
+.nav-button.active {
+background-color: #ff3800; /* Active button background color */
+color: white; /* Active button text color */
+}
+
+.nav-button.active i {
+color: white; /* Change icon color to white when active */
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+table th, table td {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #ccc;
+}
+
+table th {
+background-color: #f9f9f9;
+}
+
+table a {
+color: #007bff;
+text-decoration: none;
+}
+
+table a:hover {
+text-decoration: underline;
+}
+#newPostModal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+#newPostModal div {
+background: white;
+padding: 20px;
+width: 90%;
+max-width: 500px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+position: relative;
+}
+
+#newPostModal h2 {
+margin-top: 0;
+}
+
+#newPostModal form input, #newPostModal form textarea, #newPostModal form select {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+#newPostModal form button {
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#newPostModal form button[type="submit"] {
+background: #007bff;
+color: white;
+}
+
+#newPostModal form button[type="button"] {
+background: #ccc;
+color: black;
+}
+
+.spinner {
+width: 40px;
+height: 40px;
+border: 4px solid rgba(0, 0, 0, 0.1);
+border-top: 4px solid #007bff;
+border-radius: 50%;
+animation: spin 1s linear infinite;
+margin: 0 auto;
+}
+
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+.comments-section {
+max-height: 400px; /* Set a maximum height */
+overflow-y: auto; /* Enable vertical scrolling */
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #ffffff77;
+margin-inline: 20px;
+
+
+}
+/* Align the form elements in a single row */
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style the text area */
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style the button */
+form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+form button i {
+    font-size: 20px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+form button:hover i {
+    color: #0056b3; /* Darker blue on hover */
+}
+.comment_container{
+    background: linear-gradient(to right, #796acc, #efff5c);
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu button:hover {
+    background: #f9f9f9;
+}
+
+.dropdown-menu i {
+    font-size: 16px;
+}

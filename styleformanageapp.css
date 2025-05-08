@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    margin-left: 300px; /* Adjust to match the sidebar width */
+   border-radius: 5px;
+background: linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    min-height: 650px;
+    padding-top: 30px;
+   
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content-container {
+display: flex;
+gap: 20px;
+justify-content: space-between; /* Adjust spacing */
+align-items: flex-start; /* Align items at the top */
+}
+
+table {
+width: 95%; /* Matches the inquiries table width */
+border-collapse: collapse;
+margin-inline: 20px; /* Centers the table horizontally */
+margin-top: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+
+}
+
+table th,
+table td {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #ddd; /* Adds a light border between rows */
+}
+
+table th {
+background-color: #f2f2f2; /* Light gray background for header */
+font-weight: bold;
+color: black; /* Black text for header */
+}
+
+table td {
+color: #333; /* Dark gray text for table cells */
+}
+
+table tr {
+transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+table tr:hover {
+background-color: rgb(204, 234, 255); 
+}
+
+table td.address-cell {
+max-width: 150px; /* Set a maximum width for the cell */
+overflow: hidden; /* Hide overflowing content */
+text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+white-space: nowrap; /* Prevent text from wrapping */
+cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+}
+
+table td.address-cell:hover {
+overflow: visible; /* Show full content on hover */
+white-space: normal; /* Allow text to wrap */
+position: relative; /* Ensure the content appears above other elements */
+z-index: 1; /* Bring the hovered cell to the front */}
+
+.view-button {
+background-color: #17a2b8;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.delete-button {
+background-color: #dc3545;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.filter-container {
+width: 30%;
+max-width: 1000px; /* Optional for size limits */
+color: rgb(45, 37, 46);
+padding: 10px;
+border-radius: 8px;
+background-Color:rgb(255, 255, 255);
+}
+
+
+
+.filter-container h3 {
+   
+    margin-top: 0;
+}
+
+.filter-container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.filter-container label {
+    margin: 0;
+}
+
+.filter-container .reset-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color:rgb(85, 39, 39);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter-container .reset-button:hover {
+    background-color:rgb(145, 29, 29);
+}
+h2.listof{
+    font-weight: bold;
+    color: rgb(46, 114, 63);
+    text-align: center;
+    font-family: sans-serif;
+    background-color:rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 17px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 0;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.applications-table {
+    border-radius: 13px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 2 2 10px rgba(241, 5, 5, 0.6);
+    border: 3px solid  #28a745;
+
+}
+h3{
+    color:rgb(27, 121, 155);
+    border-bottom: 2px solid rgb(192, 192, 192);
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.addapplicant {
+   margin-top: 20px;
+   margin-left: 220px;
+    background-color: rgb(255, 255, 255);
+    
+    padding-block: 10px ;
+    width: 70PX;
+    height: 70px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(68, 36, 143);
+    font-size: 30px;
+    border: dashed 1px rgb(68, 36, 143);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.search-bar {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+gap: 10px;
+}
+
+.search-bar input[type="text"] {
+flex: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.search-bar .search-button {
+padding: 8px 15px;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.search-bar .search-button:hover {
+background-color: #218838;
+}
